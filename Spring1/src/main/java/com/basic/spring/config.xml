@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-// Spring // DTD BEAN 2.0//EN" 
+ "http://www.springframework.org/dtd/Spring-beans-2.0.dtd">
+
+<bean></bean>
+
+<bean  id="id1"  class="com.basic.spring.WelcomeBean">
+  <property name="message"   value="Haii Spring Welcome!!"></property>
+
+</bean>
+
+</beans>
