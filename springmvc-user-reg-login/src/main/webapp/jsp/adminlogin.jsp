@@ -1,42 +1,47 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Admin Login</title>
+<link rel="stylesheet"  href="css/Login.css">
+<meta charset="ISO-8859-1">
+<title>ADMIN LOGIN THE DETAILS</title>
 </head>
 <body>
-<form:form id="loginForm" modelAttribute="login" action="loginProcess"
-		method="post">
-		<table align="center">
-			<tr>
-				<td><form:label path="username">Username: </form:label></td>
-				<td><form:input path="username" name="username" id="username" /></td>
-			</tr>
-			<tr>
-				<td><form:label path="password">Password:</form:label></td>
-				<td><form:password path="password" name="password"
-						id="password" /></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td align="left"><form:button id="login" name="login">Login</form:button></td>
-			</tr>
-
-			<tr></tr>
-			<tr>
-				<td></td>
-				<td><a href="home.jsp">Home</a></td>
-			</tr>
-		</table>
-	</form:form>
-	<table align="center">
-		<tr>
-			<td style="font-style: italic; color:green;">${message}</td>
-		</tr>
-	</table>
+<form action="Adminloginservlet" method ="post">
+<table>
+<tr>
+            <div class="container">
+	
+           <div class="title"> ADMIN LOGIN</div>
+            <div class="content">
+            <form action="Loginservlet" method ="post">
+                 <div class="user-details">
+        
+			<div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" name="uname" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="pass" placeholder="Enter your Password"  required>
+            
+			<div class="button">
+          <input type="submit" value="login" > </button>
+        </div>
+        
+         <nav class="nav2">
+        
+		<a href="register.jsp" >REGISTRATION</a> 
+		
+		</nav>
+		 
+        </div>
+        </div>
+        
+		</div>	
+     </table>
+     
 
 </body>
 </html>
